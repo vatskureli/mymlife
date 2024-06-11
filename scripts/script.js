@@ -38,6 +38,25 @@ const CEF = {
     SHAXTA_PROGRESS: 35,
     MSHENEBLOBA_PROGRESS: 36,
     MEQANIKOSI: 37,
+
+    MERIA: 38,
+    SAVALI: 39,
+    SAXLI: 40,
+    STAGE: 41,
+    FIXCAR: 42,
+    CARFIX: 43,
+    POPCORN: 44,
+    GUNSHOP: 45,
+    DASTUR: 46,
+    ANTIIP: 47,
+    IPANTI: 48,
+    CASE: 49,
+    CASEO: 50,
+    MAINMENU: 51,
+    SPAWNC: 52,
+    SPEED: 53,
+    BARIGA: 54,
+    CALL: 55,
 };
 
 
@@ -101,8 +120,26 @@ function hideAllCefPackets(){
     document.getElementById('AVTOASISTENTI-Section').style.display = "none";
     document.getElementById('SAPIRPARESHO-Section').style.display = "none";
     document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
+
+    document.getElementById('MERIA-CONTAINER').style.display = "none";
+    document.getElementById('SAVALI-CONTAINER').style.display = "none";
+    document.getElementById('SAXLI-CONTAINER').style.display = "none";
+    document.getElementById('STAGE-CONTAINER').style.display = "none";
+    document.getElementById('fixcar-container').style.display = "none";
+    document.getElementById('fix-car-container').style.display = "none";
+    document.getElementById('popcorn-container').style.display = "none";
+    document.getElementById('gun-container').style.display = "none";
+    document.getElementById('DASTUR-CONTAINER').style.display = "none";
+    document.getElementById('anti-ip-container').style.display = "none";
+    document.getElementById('anti-ip-black').style.display = "none";
+    document.getElementById('case-open-container').style.display = "none";
+    document.getElementById('case-opening-container').style.display = "none";
+    document.getElementById('spawn-container').style.display = "none";
+    document.getElementById('speedometer-container').style.display = "none";
+    document.getElementById('bariga-kitxva-container').style.display = "none";
+    document.getElementById('call-container').style.display = "none";
 }
-function sendCefPacket(response) {
+    function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
     switch (response) {
         case CEF.LOGIN:
@@ -254,6 +291,78 @@ function sendCefPacket(response) {
         case CEF.MEQANIKOSI:
             document.getElementById('MEQANIKOSI-CONTAINER').style.display = "block";
             break
+
+        case CEF.MERIA:
+            document.getElementById('MERIA-CONTAINER').style.display = "block";
+            break
+
+        case CEF.SAVALI:
+            document.getElementById('SAVALI-CONTAINER').style.display = "block";
+            break
+
+        case CEF.SAXLI:
+            document.getElementById('SAXLI-CONTAINER').style.display = "block";
+            break
+
+        case CEF.STAGE:
+            document.getElementById('STAGE-CONTAINER').style.display = "block";
+            break
+
+        case CEF.FIXCAR:
+            document.getElementById('fixcar-container').style.display = "block";
+            break
+            
+        case CEF.CARFIX:
+            document.getElementById('fix-car-container').style.display = "block";
+            break
+            
+        case CEF.POPCORN:
+            document.getElementById('popcorn-container').style.display = "block";
+            break
+            
+        case CEF.GUNSHOP:
+            document.getElementById('gun-container').style.display = "block";
+            break
+            
+        case CEF.DASTUR:
+            document.getElementById('DASTUR-CONTAINER').style.display = "block";
+            break
+
+        case CEF.ANTIIP:
+            document.getElementById('anti-ip-black').style.display = "block";
+            break
+    
+        case CEF.IPANTI:
+            document.getElementById('anti-ip-container').style.display = "block";
+            break    
+
+        case CEF.CASE:
+            document.getElementById('case-open-container').style.display = "block";
+            break    
+            
+        case CEF.CASEO:
+            document.getElementById('case-opening-container').style.display = "block";
+            break   
+
+        case CEF.MAINMENU:
+            document.getElementById('MainMenu-Section').style.display = "block";
+            break  
+            
+        case CEF.SPAWNC:
+            document.getElementById('spawn-container').style.display = "block";
+            break 
+
+        case CEF.SPEED:
+            document.getElementById('speedometer-container').style.display = "block";
+            break 
+
+        case CEF.BARIGA:
+            document.getElementById('bariga-kitxva-container').style.display = "block";
+            break 
+
+        case CEF.CALL:
+            document.getElementById('call-container').style.display = "block";
+            break 
     }
 }
 
@@ -405,6 +514,74 @@ function hideCefPacket(response) {
         case CEF.MEQANIKOSI:
             document.getElementById('MEQANIKOSI-CONTAINER').style.display = "none";
             break
+
+        case CEF.MERIA:
+            document.getElementById('MERIA-CONTAINER').style.display = "none";
+            break
+
+        case CEF.SAVALI:
+            document.getElementById('SAVALI-CONTAINER').style.display = "none";
+            break
+
+        case CEF.SAXLI:
+            document.getElementById('SAXLI-CONTAINER').style.display = "none";
+            break
+
+        case CEF.STAGE:
+            document.getElementById('STAGE-CONTAINER').style.display = "none";
+            break
+
+        case CEF.FIXCAR:
+            document.getElementById('fixcar-container').style.display = "none";
+            break
+
+        case CEF.CARFIX:
+            document.getElementById('fix-car-container').style.display = "none";
+            break
+
+        case CEF.POPCORN:
+            document.getElementById('popcorn-container').style.display = "none";
+            break
+
+        case CEF.GUNSHOP:
+            document.getElementById('gun-container').style.display = "none";
+            break
+
+        case CEF.DASTUR:
+            document.getElementById('DASTUR-CONTAINER').style.display = "none";
+            break
+
+        case CEF.ANTIIP:
+            document.getElementById('anti-ip-black').style.display = "none";
+            break
+            
+        case CEF.CASE:
+            document.getElementById('case-open-container').style.display = "none";
+            break
+
+        case CEF.CASEO:
+            document.getElementById('case-opening-container').style.display = "none";
+            break
+
+        case CEF.MAINMENU:
+            document.getElementById('MainMenu-Section').style.display = "none";
+            break  
+
+        case CEF.SPAWNC:
+            document.getElementById('spawn-container').style.display = "none";
+            break
+
+        case CEF.SPEED:
+            document.getElementById('speedometer-container').style.display = "none";
+            break 
+    
+        case CEF.BARIGA:
+            document.getElementById('bariga-kitxva-container').style.display = "none";
+            break 
+
+        case CEF.CALL:
+            document.getElementById('call-container').style.display = "none";
+            break 
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {
@@ -417,7 +594,7 @@ cef.on("game:CEF:hidePackage", (responsecode) => {
 
 
 
-// <!-- =================== [ ავტორიზაცია ] =================== -->
+// <!-- =================== [ ოვტორიზოციო ] =================== -->
 cef.on('login:name', (nickname) => {
     document.getElementById('Authorization-PlayerNickname').textContent = nickname;
 });
@@ -425,7 +602,7 @@ cef.on('login:name', (nickname) => {
 cef.on('login:wrongpass', (response) => {
     document.getElementById('AVTORIZACIA-SHEIYVANE-PAROLI-BG').style.backgroundColor = '#ce464626';
     document.querySelector('.AVTORIZACIA-SHEIYVANE-PAROLI-ICON2').style.backgroundImage = 'url("http://wh14473.web3.maze-host.ru/FOTOEBI/PAROLI-ICON-WITELI.png")';
-    document.getElementById('AVTORIZACIA-SHEIYVANE-PAROLI-INPUT').placeholder = 'პაროლი არასწორია';
+    document.getElementById('AVTORIZACIA-SHEIYVANE-PAROLI-INPUT').placeholder = 'პოროლი ოროსწორიო';
     document.getElementById('AVTORIZACIA-SHEIYVANE-PAROLI-INPUT').value = '';
 });
 
@@ -443,7 +620,7 @@ function clickLogined() {
     if (!isValidPassword(password)) {
         document.getElementById('AVTORIZACIA-SHEIYVANE-PAROLI-BG').style.backgroundColor = '#ce464626';
         document.querySelector('.AVTORIZACIA-SHEIYVANE-PAROLI-ICON2').style.backgroundImage = 'url("http://wh14473.web3.maze-host.ru/FOTOEBI/PAROLI-ICON-WITELI.png")';
-        document.getElementById('AVTORIZACIA-SHEIYVANE-PAROLI-INPUT').placeholder = 'პაროლი არასწორია';
+        document.getElementById('AVTORIZACIA-SHEIYVANE-PAROLI-INPUT').placeholder = 'პოროლი ოროსწორიო';
         document.getElementById('AVTORIZACIA-SHEIYVANE-PAROLI-INPUT').value = '';
         return;
     }
@@ -456,7 +633,7 @@ function clickLogined() {
 
 
 
-// <!-- =================== [ რეგისტრაცია ] =================== -->
+// <!-- =================== [ რეგისტროციო ] =================== -->
 let gender = 0;
 cef.emit("reg:name")
 cef.on('reg:name', (response) => {
@@ -489,16 +666,16 @@ function Registration() {
 
     document.getElementById('REGISTRACIA-SHEIYVANE-PAROLI').style.backgroundColor = 'rgba(0,0,0,0.15000000596046448)';
     document.querySelector('.REGISTRACIA-SHEIYVANE-PAROLI-ICON2').style.backgroundImage = 'url("http://wh14473.web3.maze-host.ru/FOTOEBI/SHEIYVANE-PAROLI-ICON.png")';
-    document.getElementById('REGISTRACIA-SHEIYVANE-PAROLI-INPUT').placeholder = 'შეიყვანე პაროლი';	
+    document.getElementById('REGISTRACIA-SHEIYVANE-PAROLI-INPUT').placeholder = 'შეიყვონე პოროლი';	
     document.getElementById('REGISTRACIA-SHEIYVANE-MEILI-BG').style.backgroundColor = 'rgba(0,0,0,0.15000000596046448)';
     document.querySelector('.REGISTRACIA-SHEIYVANE-MEILI-ICON2').style.backgroundImage = 'url("http://wh14473.web3.maze-host.ru/FOTOEBI/SHEIYVANE-MEILI-ICON.png")';
-    document.getElementById('REGISTRACIA-SHEIYVANE-MEILI-INPUT').placeholder = 'შეიყვანე მეილი';
+    document.getElementById('REGISTRACIA-SHEIYVANE-MEILI-INPUT').placeholder = 'შეიყვონე მეილი';
 
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!validateEmail(email)) {
         document.getElementById('REGISTRACIA-SHEIYVANE-MEILI-BG').style.backgroundColor = '#ce464626';
         document.querySelector('.REGISTRACIA-SHEIYVANE-MEILI-ICON2').style.backgroundImage = 'url("http://wh14473.web3.maze-host.ru/FOTOEBI/MEILI-ICON-WITELI.png")';
-        document.getElementById('REGISTRACIA-SHEIYVANE-MEILI-INPUT').placeholder = 'მეილი არასწორია';
+        document.getElementById('REGISTRACIA-SHEIYVANE-MEILI-INPUT').placeholder = 'მეილი ოროსწორიო';
         document.getElementById('REGISTRACIA-SHEIYVANE-MEILI-INPUT').value = ''; 
         return;
     }
@@ -507,7 +684,7 @@ function Registration() {
     if (pass_r.test(password) == false) {
         document.getElementById('REGISTRACIA-SHEIYVANE-PAROLI').style.backgroundColor = '#ce464626';
         document.querySelector('.REGISTRACIA-SHEIYVANE-PAROLI-ICON2').style.backgroundImage = 'url("http://wh14473.web3.maze-host.ru/FOTOEBI/PAROLI-ICON-WITELI.png")';
-        document.getElementById('REGISTRACIA-SHEIYVANE-PAROLI-INPUT').placeholder = '6-15 სიმოლო ლათინური ასოებით';
+        document.getElementById('REGISTRACIA-SHEIYVANE-PAROLI-INPUT').placeholder = '6-15 სიმოლო ლოთინური ოსოებით';
         document.getElementById('REGISTRACIA-SHEIYVANE-PAROLI-INPUT').value = '';
         return;
     }
@@ -708,7 +885,7 @@ document.addEventListener('keyup', function(event) {
 
 
 
-// <!-- =================== [ სკინის არჩევა ] =================== -->
+// <!-- =================== [ სკინის ორჩევო ] =================== -->
 function ClickSelectSkinBTN(response) {
     console.log(response)
     let scssbattemp = response + ',' + 'a';
@@ -716,7 +893,7 @@ function ClickSelectSkinBTN(response) {
 }
 
 
-// <!-- =================== [ ჩაიჭერი ] =================== -->
+// <!-- =================== [ ჩოიჭერი ] =================== -->
 function ClickSelectSkinBTN(response) {
     console.log(response)
     let scssbattemp = response + ',' + 'a';
@@ -1011,51 +1188,51 @@ cef.on("Quests:setinfo", (quest, progress) => {
     switch(quest) {
         case 0:{ // #1
             if(progress == 0){
-                document.getElementById("progress-status-N1").textContent = 'პროცესშია';
+                document.getElementById("progress-status-N1").textContent = 'პროცესშიო';
                 document.getElementById("progress-status-N1").style.color = 'white';
             }
             else if(progress == 1){
-                document.getElementById("progress-status-N1").textContent = 'შესრულებულია';
+                document.getElementById("progress-status-N1").textContent = 'შესრულებულიო';
                 document.getElementById("progress-status-N1").style.color = 'white';
             }
         }
         case 1:{ // #2
             if(progress == 0){
-                document.getElementById("progress-status-N2").textContent = 'პროცესშია';
+                document.getElementById("progress-status-N2").textContent = 'პროცესშიო';
                 document.getElementById("progress-status-N2").style.color = 'white';
             }
             else if(progress == 1){
-                document.getElementById("progress-status-N2").textContent = 'პროცესშია';
+                document.getElementById("progress-status-N2").textContent = 'პროცესშიო';
                 document.getElementById("progress-status-N2").style.color = 'white';
             }
         }
         case 2:{ // #3
             if(progress == 0){
-                document.getElementById("progress-status-N3").textContent = 'პროცესშია';
+                document.getElementById("progress-status-N3").textContent = 'პროცესშიო';
                 document.getElementById("progress-status-N3").style.color = 'white';
             }
             else if(progress == 1){
-                document.getElementById("progress-status-N3").textContent = 'პროცესშია';
+                document.getElementById("progress-status-N3").textContent = 'პროცესშიო';
                 document.getElementById("progress-status-N3").style.color = 'white';
             }
         }
         case 3:{ // #4
             if(progress == 0){
-                document.getElementById("progress-status-N4").textContent = 'პროცესშია';
+                document.getElementById("progress-status-N4").textContent = 'პროცესშიო';
                 document.getElementById("progress-status-N4").style.color = 'white';
             }
             else if(progress == 1){
-                document.getElementById("progress-status-N4").textContent = 'პროცესშია';
+                document.getElementById("progress-status-N4").textContent = 'პროცესშიო';
                 document.getElementById("progress-status-N4").style.color = 'white';
             }
         }
         case 4:{ // #5
             if(progress == 0){
-                document.getElementById("progress-status-N5").textContent = 'პროცესშია';
+                document.getElementById("progress-status-N5").textContent = 'პროცესშიო';
                 document.getElementById("progress-status-N5").style.color = 'white';
             }
             else if(progress == 1){
-                document.getElementById("progress-status-N5").textContent = 'პროცესშია';
+                document.getElementById("progress-status-N5").textContent = 'პროცესშიო';
                 document.getElementById("progress-status-N5").style.color = 'white';
             }
         }
@@ -1066,11 +1243,11 @@ cef.on("Quests:setinfo", (quest, progress) => {
 
 
 
-// <!-- ==================== [ საჩივარი პოლიციაში ] ================ -->
+// <!-- ==================== [ სოჩივორი პოლიციოში ] ================ -->
 function GagzavnaSapatrulo() {
     const inptxt = document.getElementById('SAPATRULO-SHEIYVANE-GANCXADEBA-INPUT').value;
     document.getElementById('SAPATRULO-SHEIYVANE-GANCXADEBA').style.background ='rgba(0,0,0,0.15000000596046448)';
-    document.getElementById('SAPATRULO-SHEIYVANE-GANCXADEBA-INPUT').placeholder = 'შეიყვანე განცხადება';
+    document.getElementById('SAPATRULO-SHEIYVANE-GANCXADEBA-INPUT').placeholder = 'შეიყვონე გონცხოდებო';
     document.getElementById('SAPATRULO-SHEIYVANE-GANCXADEBA-INPUT').value = '';
     if(inptxt.length < 4)
     {
@@ -1088,7 +1265,7 @@ function GagzavnaSapatrulo() {
 
 
 
-// <!-- ==================== [ ავტობაზრობა ] ================ -->
+// <!-- ==================== [ ოვტობოზრობო ] ================ -->
 cef.on("Avtobazroba:setinfo", (vehiclename, price, cxeniszala, torqi, stages, dzarvismdgomareoba) =>{
     document.getElementById('Vehicle-Name').textContent = vehiclename;
     document.getElementById('Vehicle-Price').textContent = price;
@@ -1109,13 +1286,13 @@ function TestDriveCar(){
 }
 // 
 
-// <!-- ==================== [ ანიმაციები ] ================ -->
+// <!-- ==================== [ ონიმოციები ] ================ -->
 function ClickedAnimation(animnum){
     let attemp = animnum + "," + "a";
     cef.emit("Animations:clickedanim", attemp)
 }
 
-// <!-- ==================== [ ბანკომატი ] ================= -->
+// <!-- ==================== [ ბონკომოტი ] ================= -->
 function TANXISGANAGDEBA() {
     hideCefPacket(CEF.ATMMAIN);
     sendCefPacket(CEF.ATMGANAGDEBA);
@@ -1147,7 +1324,7 @@ cef.on('ATM:setinfoMain', (nickname, bitcoins, level, exp, bankmoney, phonemoney
     document.getElementById('Bankomat-ticket').textContent = tickets;
 });
 
-// თანხის მოხსნის გვერდი
+// თონხის მოხსნის გვერდი
 
 cef.on('ATM:setinfoBank', (nickname, bitcoins, level, exp, bankmoney) => {
     const nicknameParts = nickname.split('_');
@@ -1166,13 +1343,13 @@ function compliteTanxisMoxsna(){
 
     if(!inputmoney) {
         document.getElementById('BANKOMATI-GANAGDEBA-CHAWERE-TANXA-BG').style.background = 'rgba(255,255,255,0.02500000037252903)'
-        document.getElementById('BANKOMATI-GANAGDEBA-CHAWERE-TANXA-INPUT').placeholder = 'მიუთეთ თანხა';
+        document.getElementById('BANKOMATI-GANAGDEBA-CHAWERE-TANXA-INPUT').placeholder = 'მიუთეთ თონხო';
         document.getElementById('BANKOMATI-GANAGDEBA-CHAWERE-TANXA-INPUT').value = '';
         return
     }
     if(inputmoney > bankmoney) {
         document.getElementById('BANKOMATI-GANAGDEBA-CHAWERE-TANXA-BG').style.background = '#ce464626';
-        document.getElementById('BANKOMATI-GANAGDEBA-CHAWERE-TANXA-INPUT').placeholder = 'არ გაქვთ საკმარისი თანხა';
+        document.getElementById('BANKOMATI-GANAGDEBA-CHAWERE-TANXA-INPUT').placeholder = 'ორ გოქვთ სოკმორისი თონხო';
         document.getElementById('BANKOMATI-GANAGDEBA-CHAWERE-TANXA-INPUT').value = '';
         return
     }
@@ -1181,7 +1358,7 @@ function compliteTanxisMoxsna(){
     cef.emit('ATM:transaction', transattemp)
 }
 
-// ჯარიმის გადახდის გვერდი
+// ჯორიმის გოდოხდის გვერდი
 var ATMsajarimo_choosedslot
 
 function ticketinfo (nickname, bitcoins, level, exp, tickets, cashmoney, slot1money, slot2money) {
@@ -1223,20 +1400,20 @@ function compliteJarimisGadaxda(){
         document.getElementById('JARIMEBI-TRANSPORTZE-SLOTI-1').style.background = '#ce464626'
         document.getElementById('JARIMEBI-TRANSPORTZE-SLOTI-2').style.background = '#ce464626'
         document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-BG').style.background = '#ce464626'
-        document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').placeholder = 'აირჩიეთ სლოტი';
+        document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').placeholder = 'ოირჩიეთ სლოტი';
         document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').value = '';
         return
     }
 
     if(!inputmoney) {
         document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-BG').style.background = 'rgba(255,255,255,0.02500000037252903)'
-        document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').placeholder = 'მიუთეთ თანხა';
+        document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').placeholder = 'მიუთეთ თონხო';
         document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').value = '';
         return
     }
     if(inputmoney > playerCash) {
         document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-BG').style.background = '#ce464626';
-        document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').placeholder = 'არ გაქვთ საკმარისი თანხა';
+        document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').placeholder = 'ორ გოქვთ სოკმორისი თონხო';
         document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').value = '';
         return
     }
@@ -1244,7 +1421,7 @@ function compliteJarimisGadaxda(){
     if(inputmoney > jarimatotal)
     {
         document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-BG').style.background = '#ce464626';
-        document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').placeholder = 'თანხა არასწორია';
+        document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').placeholder = 'თონხო ოროსწორიო';
         document.getElementById('JARIMEBI-TRANSPORTZE-CHAWERE-TANXA-INPUT').value = '';
         return       
     }
@@ -1270,7 +1447,7 @@ function ATMSajarimoSlotsClick(code){
 }
 
 
-// ტელეფონის ანგარიშის შევსება
+// ტელეფონის ონგორიშის შევსებო
 
 cef.on('ATM:setinfoPhone', (nickname, bitcoins, level, exp, phonemoney, cashmoney) => {
     const nicknameParts = nickname.split('_'); 
@@ -1300,7 +1477,7 @@ function compliteTelefonisShevseba(){
 
     if(inputmoney > playerCash){
         document.getElementById('BANKOMATI-TELEFONI-CHAWERE-TANXA-BG').style.background = '#ce464626';
-        document.getElementById('BANKOMATI-TELEFONI-CHAWERE-TANXA-INPUT').placeholder = 'არ გაქვთ საკმარისი თანხა';
+        document.getElementById('BANKOMATI-TELEFONI-CHAWERE-TANXA-INPUT').placeholder = 'ორ გოქვთ სოკმორისი თონხო';
         document.getElementById('BANKOMATI-TELEFONI-CHAWERE-TANXA-INPUT').value = '';
         return;
     }
