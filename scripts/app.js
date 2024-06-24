@@ -35,3 +35,7 @@ cef.on("Mshenebloba:setinfo", (tomrebi, totalmoney) => {
     document.getElementById('MsheneblobaMoney').textContent = totalmoney;
     document.getElementById('MsheneblobaTomrebi').textContent = tomrebi;
 })
+
+cef.on('showNotification', (id) => {
+    ChangeIcon(id);
+});
