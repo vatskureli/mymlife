@@ -18,8 +18,9 @@ const CEF = {
     MERIANPC: 15,
     DIALOG: 16,
     MAINMENU: 17,
-    DONATE: 18,
-    HUD: 19
+    HUD: 18,
+    SANOMRE: 19,
+    DONATE: 20
 };
 
 
@@ -44,7 +45,6 @@ function hideAllCefPackets(){
     document.getElementById('alogini').style.display = "none";
     document.getElementById('AVTOBAZROBA-Section').style.display = "none";
     document.getElementById('MANQANA-PANEL').style.display = "none";
-    document.getElementById('SAPIRPARESHO-Section').style.display = "none";
     document.getElementById("ANIMACIEBI-Section").style.display = "none";
     document.getElementById("MAP-CONTAINER").style.display = "none";
     document.getElementById("NOTIFICATION-CONTAINER").style.display = "none";
@@ -56,9 +56,9 @@ function hideAllCefPackets(){
     document.getElementById("NPC-SAPATRULO").style.display = "none";
     document.getElementById("MERIA-NPC").style.display = "none";
     document.getElementById("DIALOG-CONTAINER").style.display = "none";
-    document.getElementById('MainMenu-Section').style.display = "none";
-    document.getElementById('MainMenu-DonateSection').style.display = "none";
     document.getElementById('hud-container').style.display = "none";
+    document.getElementById('choose-sanomre-container').style.display = "none";
+    document.getElementById('DONATE-SANOMRE-CONTAINER').style.display = "none";
 }
 function sendCefPacket(response) {
     hideCefPacket(CEF.HUD)
@@ -137,13 +137,17 @@ function sendCefPacket(response) {
             document.getElementById('MainMenu-Section').style.display = "block";
             break
 
-        case CEF.DONATE:
-            document.getElementById('MainMenu-DonateSection').style.display = "block";
-            break
-
         case CEF.HUD:
             document.getElementById('hud-container').style.display = "block";
-            break           
+            break
+            
+        case CEF.SANOMRE:
+            document.getElementById('choose-sanomre-container').style.display = "block";
+            break   
+
+        case CEF.DONATE:
+            document.getElementById('DONATE-SANOMRE-CONTAINER').style.display = "block";
+            break 
     }
 }
 
@@ -221,13 +225,17 @@ function hideCefPacket(response) {
             document.getElementById('MainMenu-Section').style.display = "none";
             break
 
-        case CEF.DONATE:
-            document.getElementById('MainMenu-DonateSection').style.display = "none";
-            break
-
         case CEF.HUD:
             document.getElementById('hud-container').style.display = "none";
             break    
+
+        case CEF.SANOMRE:
+            document.getElementById('choose-sanomre-container').style.display = "none";
+            break 
+            
+        case CEF.DONATE:
+            document.getElementById('DONATE-SANOMRE-CONTAINER').style.display = "none";
+            break 
     }
 }
 cef.on("game:CEF:sendPackage", (responsecode) => {
